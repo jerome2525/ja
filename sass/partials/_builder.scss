@@ -1,0 +1,521 @@
+.fl-builder-content {
+	.fl-row-fixed-width {
+		max-width: rem(1279px);
+		width: 95%;
+	}
+
+
+	.header-row {
+		.fl-row-content-wrap {
+			padding-top: rem(10px);
+    		padding-bottom: rem(15px);
+			.fl-row-content {
+				.fl-module-photo {
+					.fl-module-content {
+						margin: 0;
+					}
+				}
+
+				.fl-module-pp-advanced-menu {
+					.fl-module-content {
+						.pp-advanced-menu {
+							.menu {
+								.menu-item {
+									a {
+										font-size: rem(18px);
+										font-weight: 300;
+										@include breakpoint($abovemobile) {
+											color: $blue;
+										}
+										text-transform: uppercase;
+										font-family: $font-stack-1;
+										padding: rem(0 52px 0 0);
+									}
+									@include breakpoint($abovemobile) {
+										&:last-of-type {
+											a {
+												padding-right: 0;
+											}	
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.hero-row {
+		.fl-row-content-wrap {
+			//padding: rem(325px 0 293px);
+			&:after {
+				width: 38%;
+				opacity: .6;
+				@include breakpoint($mobile-tab) {
+					width: 100%;
+				}
+			}
+			.fl-row-content {
+				max-width: rem(1234px);
+				@include breakpoint($portrait) {
+					max-width: 95%;
+				}
+				.fl-col {	
+					&.left-col {
+						.fl-col-content {
+							padding-right: rem(131px);
+							@include breakpoint($mobile-tab-por) {
+								padding-right: 0;
+							}
+						}
+					}
+					.fl-col-content {
+						.fl-module-pp-heading {
+							.fl-module-content {
+								.pp-heading-content {
+									.heading-title {
+										font-size: rem(42px);
+										text-transform: uppercase;
+										line-height: rem(52px);
+										margin-top: 0;
+		    							margin-bottom: rem(11px);
+										.title-text {
+											span {
+												font-weight: 300;
+												display: block;
+											}
+										}
+									}
+								}
+
+								.pp-sub-heading {
+									padding-left: rem(3px);
+									p {
+										font-size: rem(18px);
+										font-weight: 400;
+										line-height: rem(23px);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	.sector-row {
+		.fl-row-content-wrap {
+			.fl-row-content {
+				.fl-module-heading {
+					.fl-module-content {
+						margin: rem(20px);
+						.fl-heading {
+							text-transform: uppercase;
+						}
+					}
+				}
+				.fl-col {
+					.fl-col-content {
+					}
+					@include breakpoint($mobile) {
+						&.fl-col-small {
+							max-width: 100%;
+						}
+					}
+					&.mini-col {
+						.fl-col-content {
+							min-height: rem(420px);
+							.fl-module-heading {
+								.fl-module-content {
+									.fl-heading {
+										font-weight: 600;
+										line-height: 1.7em;
+										.fl-heading-text {
+											span {
+												display: block;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					&.main-col {
+						.fl-col-content {
+							padding: rem(20px);
+							.fl-module-heading {
+								.fl-module-content {
+									max-width: rem(348px);
+	    							margin: 0 auto;
+	    							@include breakpoint($mobile) {
+	    								max-width: 100%;
+	    								.fl-heading {
+	    									text-align: center;
+	    								}
+	    							}
+									.fl-heading {
+										font-size: rem(42px);
+										color: $blue;
+										@include breakpoint($tablet) {
+											font-size: 27px;
+										}
+									}
+
+									h3.fl-heading {
+										font-weight: 700;
+									}
+									h4.fl-heading {
+										font-weight: 300;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	.blue-row {
+		.fl-row-content-wrap {
+			padding: rem(71px 0 66px);
+			.fl-row-content {
+				max-width: rem(1140px);
+				.fl-module-heading {
+					.fl-module-content {
+						margin-bottom: rem(49px);
+						.fl-heading {
+							font-size: rem(24px);
+						}
+					}
+				}
+
+				.fl-module-rich-text {
+					.fl-module-content {
+						.fl-rich-text {
+							p {
+								line-height: 1.6em;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	.back-top-row {
+		.fl-row-content-wrap {
+			padding: rem(4px 0 22px);
+			.fl-row-content {
+				.fl-module-icon {
+					.fl-module-content {
+						.fl-icon-wrap {
+							.fl-icon {
+								display: inline-block;
+								i {
+									font-size: rem(40px);
+									&:before {
+										font-size: rem(40px);
+									}
+								}
+							}
+							.fl-icon-text {
+								padding: 0;
+								height: auto;
+								.fl-icon-text-link {
+									p {
+										text-transform: uppercase;
+										font-size: rem(19px);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.contact-row {
+		.fl-row-content-wrap {
+			padding: rem(87px 0 20px);
+			.fl-row-content {
+				.address-col {
+					.fl-col-content {
+						@include breakpoint($abovemobile) {
+							padding-left: rem(48px);
+	    					padding-top: rem(6px);
+    					}
+
+    					@include breakpoint($mobile) {
+    						@include container(400px);
+    					}
+						.fl-module-heading {
+							.fl-module-content {
+								margin-bottom: rem(37px);
+								.fl-heading {
+									font-size: rem(24px);
+									font-weight: 700;
+									text-transform: uppercase;
+								}
+							}
+						}
+
+						.fl-module-rich-text {
+							&.form-module {
+								.fl-module-content {
+									margin-bottom: 0;
+								}
+							}
+							.fl-module-content {
+								margin-bottom: rem(32px);
+								.fl-rich-text {
+									p {
+										margin-bottom: rem(9px);
+									}
+								}
+							}
+						}
+
+					}
+				}
+			}
+		}
+	}
+
+
+	.map-row {
+		.fl-row-content-wrap {
+			padding: rem(70px 0);
+			.fl-row-content {
+				max-width: rem(745px);
+			}
+		}
+	}
+
+	.footer-row {
+		.fl-row-content-wrap {
+			padding: rem(17px 0);
+			.fl-row-content {
+				max-width: rem(1229px);
+				p {
+					margin-bottom: 0;
+					@include breakpoint($mobile) {
+						text-align: center !important;
+					}	
+				}
+				.fl-module-icon-group {
+					.fl-module-content {
+						.fl-icon-group {
+							@include breakpoint($mobile) {
+								text-align: center;
+							}
+							.fl-icon {
+								a {
+									i, i:before {
+										font-size: rem(18px);
+									}
+								}
+							}
+						}
+					}
+				}
+				@include breakpoint($mobile) {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+}
+
+
+.page {
+
+	::-webkit-input-placeholder { /* Chrome */
+	  color: $blue !important;
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+	  color: $blue !important;
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+	  color: $blue !important;
+	  opacity: 1 !important;
+	}
+	:-moz-placeholder { /* Firefox 4 - 18 */
+	  color: $blue !important;
+	  opacity: 1 !important;
+	}
+
+	.gform_wrapper.gform_validation_error .gform_body ul li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half) {
+		max-width: 100% !important;
+	}
+
+	.gform_wrapper li.gfield.gfield_error, .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+		border: 0;
+	}
+
+	.gform_wrapper li.gfield.gfield_error, 
+	.gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+		background-color: transparent;
+    	margin-bottom: 0 !important;
+    	padding: 0;
+	}
+
+	.gform_confirmation_message {
+		font-weight: 700;
+    	font-size: rem(20px);
+	}
+
+	.gform_wrapper .top_label .gfield_error {
+		width: 100%;
+	}
+
+	.gform_wrapper .validation_message {
+		display: none;
+	}
+
+	.gform_wrapper li.gfield.gfield_error.gfield_contains_required div.ginput_container, 
+	.gform_wrapper li.gfield.gfield_error.gfield_contains_required label.gfield_label {
+		margin-top: 0;
+	}
+
+	.gform_wrapper .top_label div.ginput_container {
+		margin-top: 0;
+		margin-bottom: rem(10px);
+		&.ginput_container_textarea {
+			margin-bottom: 0;
+		}
+	}
+
+	.gform_wrapper ul.gform_fields li.gfield {
+		@include breakpoint($abovemobile) {
+			padding-right: rem(15px);
+			padding-left: rem(2px);
+		}
+
+		@include breakpoint($mobile-tab-por) {
+			padding-right: 0;
+		}
+	}
+
+	.gform_wrapper textarea.large {
+		height: rem(190px);
+	}
+
+	.gform_wrapper .gform_footer {
+		text-align: right;
+		padding: rem(3px 0 0 0);
+		margin: 0;
+		.gform_button {
+			font-size: rem(12px);
+			font-weight: 400;
+			text-transform: uppercase;
+			border: 0;
+			background: #41b7c4;
+			color: $white;
+			padding: rem(8px 41px);
+			font-family: $font-stack-1;
+			@include breakpoint($mobile-tab-por) {
+				margin: 0;
+			}
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+
+	.gform_wrapper li.gfield.field_description_below+li.gsection {
+		display: none;
+	}
+
+	.gform_wrapper {
+		.gform_fields {
+			.gfield {
+				margin-top: 0;
+				input, 
+				textarea {
+					border: 0;
+					font-size: rem(12px) !important;
+					color: $blue;
+					background: #eaf4f6;
+					font-family: $font-stack-1 !important;
+					margin-top: 0;
+					padding: rem(15px 13px) !important;
+				}
+
+				input {
+					height: rem(30px);
+				}
+			}
+		}
+	}
+	//Gravity form column setup
+	.gform_wrapper.two-column_wrapper {
+		max-width: rem(586px);
+	}
+
+	.gform_wrapper.two-column_wrapper ul.gform_fields,
+	.gform_wrapper.two-column_wrapper ul.gform_column li.gsection:first-child {
+		display: none;
+	}
+
+	.gform_wrapper.two-column_wrapper ul.gform_fields.gform_column {
+		display: block;
+	}
+
+	.gform_wrapper.two-column_wrapper ul.one-half {
+		//margin-left: 6% !important;
+		width: 37%;
+		float: left;
+		&.last {
+			width: 63%;
+			@include breakpoint($mobile-tab-por) {
+				width: 100%;
+			}
+		}
+	}
+	.gform_wrapper.two-column_wrapper ul.one-half.first {
+		margin-left: 0 !important;
+	}
+
+	#input_3_2,
+	#input_3_3,
+	#input_3_4 {
+		width: 100%;
+	}
+
+	.gform_wrapper .gsection {
+		border-bottom: none !important;
+	}
+
+	.gform_wrapper .top_label li.gfield.gf_right_half+li.gsection {
+		padding: 0 !important;
+	}
+
+	@media only screen and (max-width: 1075px) {
+		
+		.gform_wrapper.two-column_wrapper ul.one-half {
+			width: 100%;
+		}
+		
+		.gform_wrapper.two-column_wrapper ul.one-half {
+			margin-left: 0 !important;
+		}
+		
+		.gform_wrapper .gsection {
+			display: none !important; /* remove !important if it's not needed */
+		}
+		
+		#gform_wrapper_3 li {
+			margin-bottom: 10px;
+		}
+		
+	}
+}

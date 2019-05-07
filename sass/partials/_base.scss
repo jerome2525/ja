@@ -1,0 +1,211 @@
+html {
+	@include rem-baseline;
+	@media ( min-width: 1024px ) and ( max-width: 1279px ) { 
+		@include rem-baseline(90%);
+	}
+	@media ( min-width: 768px ) and ( max-width: 1023px ) { 
+		@include rem-baseline(80%);
+	}
+	@media (max-width: 767px) {
+    	@include rem-baseline(70%);
+  	}
+}
+
+html, html a {
+    -webkit-font-smoothing: antialiased !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+
+}
+
+html, body{
+   height: 100%;
+   min-height: 100%;
+}
+
+body {
+	font-size: rem(18px);
+	font-family: $font-stack-1;
+	color: $black;
+	line-height: rem(21px);
+}
+
+.genesis-skip-link,
+.post-edit-link {
+	display: none;
+}
+
+a {
+	font-family: $font-stack-1;
+	color: $blue;
+	text-decoration: none;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	&:hover {
+		font-weight: 600;
+		opacity: .8;
+	}
+}
+
+p {
+	font-size: rem(18px);
+	margin-bottom: rem(20px);
+	line-height: 1.2em;
+	font-family: $font-stack-1;
+
+	&.disclaimer {
+		font-size: rem(16px);
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+#{headings()} {
+	font-family: $font-stack-1;
+	line-height: 1.2;
+	margin: rem(20px 0px);
+	margin-top: 0;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: rem(42px);
+}
+
+h2 {
+	font-size: rem(42px);
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+h4 {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+h5 {
+	font-size: rem(18px);
+}
+
+h6 {
+	font-size: rem(16px);
+	text-transform: uppercase;
+	margin-bottom: rem(20px);
+}
+
+blockquote {
+    margin: 0;
+	font-style: italic;
+
+	p {
+		margin: 0 !important;
+	}
+
+}
+
+cite {
+	font-size: 1.2rem;
+	font-style: normal;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 1.2rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+	font-size: 1.1rem;
+	word-wrap: breakwork;
+}
+
+strong {
+	font-weight: 700;
+}
+
+em, 
+i, 
+cite {
+  font-style: italic;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	quotes: "" "";
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}

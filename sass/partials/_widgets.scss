@@ -1,0 +1,28 @@
+.below-header-ad {
+	padding: 1.8rem;
+}
+
+.widget {
+	padding: 0 0 3rem 0;
+}
+
+.widget-title {
+	span {
+		font-family: FreightSansMediumSC, $font-stack-1;
+		text-transform: uppercase;
+	}
+}
+
+.soliloquy-container {
+	.soliloquy-caption {
+		&.soliloquy-caption-bottom {
+			bottom: 15% !important;
+		}
+		.soliloquy-caption-inside {
+			background: url('images/note-bg.jpg') no-repeat !important;
+			width: 500px;
+			height: 334px;
+			margin: 0 auto;
+		}
+	}
+}

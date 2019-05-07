@@ -1,0 +1,21 @@
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+//mixins that can any number of column for divisions
+@mixin rowMachine($numPerRow, $margin) {
+	float: left;
+	width: ((100% - (($numPerRow - 1) * $margin)) / $numPerRow);
+	&:nth-child(n) {
+		margin-right: $margin;
+	}
+	&:nth-child(#{$numPerRow}n) {
+		margin-right: 0;
+	}
+}
+
+

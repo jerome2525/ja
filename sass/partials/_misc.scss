@@ -1,0 +1,90 @@
+
+img.centered,
+.aligncenter {
+  display: block;
+  margin: rem(10px auto 24px);
+}
+
+img.alignnone {
+  margin-bottom: rem(12px);
+}
+
+.alignleft {
+  float: left;
+  text-align: left;
+}
+
+.alignright {
+  float: right;
+  text-align: right;
+}
+
+img.alignleft,
+.wp-caption.alignleft {
+  margin: rem(0 24px 24px 0);
+}
+
+img.alignright,
+.wp-caption.alignright {
+  margin: rem(0 0 24px 24px);
+}
+
+.wp-caption {
+  max-width: 100%;
+}
+
+.wp-caption-text {
+  font-family: FreightSansMedium, $font-stack-1;
+  font-size: rem(12px);
+  text-align: center;
+  letter-spacing: .33px;
+  text-transform: uppercase;
+  line-height: 29px;
+}
+
+.gallery-caption {
+}
+
+.widget_calendar table {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.widget_calendar td,
+.widget_calendar th,
+.text-center {
+  text-align: center;
+}
+
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+.small-hr {
+  display: block;
+  max-width: 25em;
+  border-top: 1px solid $gold;
+  margin: rem(30px auto);
+}
+
+.mobile-only {
+
+  display: none;
+  
+  @include breakpoint( $tablet ) {
+    display: block;
+  }
+}
+
+.desktop-only {
+  
+  @include breakpoint( $desk ) {
+    display: none;
+  }
+
+}
